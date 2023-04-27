@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #F5F5F5;
+}
+
+nav{
+    background-color:  #0a0a0a;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav img{
+    border-radius: 60%;
+}
+
+nav label{
+    color: #b1b1b1;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin: 0px 1rem;
+}
+
+nav ul li{ 
+    display: inline-block;
+    line-height: 65px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: background-color 0.5s;
+}
+
+nav ul li a.active{
+    background: #ffffff;
+    color: #0a0a0a;
+}
+
+nav ul li a:hover{
+    background: antiquewhite;
+    color: #0a0a0a;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+button{
+    height: 35px;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.imgback{
+    background-color:#0a0a0a;
+    background-image: url(../img/6.jpg);
+    color: antiquewhite;
+    padding-top: 100px;
+    padding-bottom: 700px;
+    background-blend-mode:lighten;
+    font-size: 16px;
+}
+
+img{
+    position: relative;
+    padding: 10px;
+}
+
+.ticket{
+    font-size: 20px;
+    background-color:  #474545;
+    color: white;
+}
+
+.announcement{
+    text-transform: uppercase;
+    background-color:  #333333;
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+}
+
+.book{
+    color: white;
+    background-color:  #434040;
+    margin-left: 650px;
+    border-radius: 0px;
+    border-color: white;
+}
+
+footer{
+    background-color:  #0a0a0a;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.about-us{
+    display: inline-block;
+}
+
+.disclaimer{
+    display: inline-block;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.follow-us{
+    display: inline-block;
+}
+
+footer ul li a{
+    color:white;
+}
+footer ul li a i{
+    padding: 4px;
+}
