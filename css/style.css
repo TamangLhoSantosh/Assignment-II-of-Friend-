@@ -11,72 +11,75 @@ body{
     background-color: #F5F5F5;
 }
 
-nav{
-    background-color:  #0a0a0a;
-    height: 70px;
+.header{
     width: 100%;
-    overflow: hidden;
+    height: 70px;
+    background-color: #0a0a0a;
+    display: flex;
 }
 
-nav img{
-    border-radius: 60%;
+.logo{
+    display: flex;
+    width: 50%;
+    height: 70px;
 }
 
-nav label{
+.title{
+    margin-top: 10px;
     color: #b1b1b1;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
-nav ul{
-    float: right;
-    margin: 0px 1rem;
+.img{
+    margin-top: 5px;
+    padding: 5px;
 }
 
-nav ul li{ 
-    display: inline-block;
-    line-height: 65px;
+.hamburger-menu{
+    width: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: flex-end;
 }
 
-nav ul li a{
-    color: #fff;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    padding: 7px 13px;
-    border-radius: 3px;
-    transition: background-color 0.5s;
+#menu-button{
+    font-size: 50px;
 }
 
-nav ul li a.active{
-    background: #ffffff;
-    color: #0a0a0a;
+#menu-button:hover{
+    color:#686868;
 }
 
-nav ul li a:hover{
-    background: antiquewhite;
-    color: #0a0a0a;
+.search{
+    display: flex;
+    background-color: #474545;
+    padding: 10px;
 }
 
-input{
-    width: 200px;
-    height: 40px;
+.searchbar{
+    width: 90%;
+    height: 40px; 
     border-radius: 20px;
 }
 
-button{
-    height: 35px;
+.search-button{
+    height: 40px;
     width: 100px;
     border-radius: 30px;
 }
 
-.imgback{
+.content{
+    height: 367px;
     background-color:#0a0a0a;
+    background-repeat: no-repeat;
     background-image: url(../img/6.jpg);
     color: antiquewhite;
     padding-top: 100px;
-    padding-bottom: 700px;
     background-blend-mode:lighten;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 img{
@@ -85,52 +88,108 @@ img{
 }
 
 .ticket{
-    font-size: 20px;
+    font-size: 14px;
     background-color:  #474545;
     color: white;
+    text-align: center;
+}
+
+.ticket-title{
+    font-size:20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .announcement{
-    text-transform: uppercase;
-    background-color:  #333333;
-    font-size: 40px;
-    padding: 10px;
-    color: white;
+    background-color: #0a0a0a;
 }
 
-.book{
-    color: white;
-    background-color:  #434040;
-    margin-left: 650px;
-    border-radius: 0px;
-    border-color: white;
+.announcement-text{
+    padding: 12px;
+    font-family: 'Patua One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #FFFFFF;
 }
 
-footer{
-    background-color:  #0a0a0a;
-    height: 100px;
+.book-now{
+    padding: 20px;
+}
+
+.book-now-button{
+    padding: 20px;
+    margin: 0px auto;
+    background: rgba(86, 68, 68, 0.4);
+    font-family: 'Patua One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.08px;
+
+    color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.book-now-button:hover{
+    color: rgb(86, 68, 68);
+    background-color: white;
+}
+
+.footer{
     width: 100%;
-    overflow: hidden;
     color: white;
+    background-color:  #000000;
 }
 
-.about-us{
-    display: inline-block;
+.follow-us-text{
+    padding-top: 10px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.follow-us-link{
+    font-size: 20px;
+    display: flex;
+    font-family: 'Patua One';
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px 10px;
+}
+
+.follow-us-link a{
+    color: aliceblue;
+}
+
+span{
+    padding: 10px;
+}
+
+.edit-hr{
+    width: 90%;
+    margin: 0px auto;
 }
 
 .disclaimer{
-    display: inline-block;
-    margin-left: 200px;
-    margin-right: 200px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
 }
 
-.follow-us{
-    display: inline-block;
-}
-
-footer ul li a{
-    color:white;
-}
-footer ul li a i{
-    padding: 4px;
+.about-us{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -2px;
 }

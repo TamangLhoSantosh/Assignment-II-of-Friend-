@@ -4,33 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
     <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
     <!-- body content of the page -->
     <body>
         <!-- navigation bar with logo and navigation links -->
-        <nav>
-            <img src="./img/1.jpg" alt="Logo"><label>EEF</label>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Event</a></li>
-                <li><a href="#">Concert Details</a></li>
-                <input type="text" placeholder="Search Concert, Artist">
-                <button>Search</button>
-            </ul>
-        </nav>
+        <div class="header">
+            <div class="logo">
+                <div class="img">
+                    <img src="./img/1.jpg" alt="logo">
+                </div>
+                <div class="title">
+                    EEF
+                </div>
+            </div>
+            <div class="hamburger-menu">
+                <i class="fa-solid fa-bars" id="menu-button"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="search">
+            
+            <div style="width:400px">
+                <input type="text" placeholder="Search Concert, Artist" class="searchbar">
+            </div>
+
+            <div>
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+
+        <hr>
 
         <!-- Main content-->
+        <div class="content">
+            <pre>
 
-        <pre class="imgback">Elektrik Eel Festival runs over 3 days with over 120 artists playing across 12 stages at the Royal Park in Melbourne, Australia.
+    Elektrik Eel Festival runs over 3 days with over
+    
+    120 artists playing across 12 stages at the Royal Park 
 
-             With cutting-edge live shows and both international superstars of tomorrow, Elektrik Eel showcases the brightest acts from the world. 
+    In Melbourne, Australia. With cutting-edge live shows and
 
-             Engage your senses and become immersed in an electrifying aural universe.
-        </pre>
+    Both International superstars of tomorrow, 
 
+            Elektrik Eel showcases 
+    
+    The brightest acts from the world. Engage your senses and 
+    
+    Become immersed in an electrifying aural universe.
+            </pre>
+        </div>
+        
         <hr>
         
         <div style="background-color: #474545;">
@@ -50,49 +79,74 @@
         <div>
             <pre class="ticket">
 
-Tickets info:
+<span class="ticket-title">Tickets info:</span>
 
-Early bird tickets are on sale now for a limited time only Early bird* price: $205 (3 days) – Book Now
+Early bird tickets are on sale now for a limited time only 
+
+Early bird price: $205 (3 days) – Book Now
 
 Full price: $340 (3 days) – Book Now
 
 Single day: $110 – Book Now
 
-*Early bird price ends in August, when ticket costs for 3 days will change to full price.
+*Early bird price ends in August, when ticket costs for
+ 3 days will change to full price.
             </pre>
         </div>
 
         <hr>
 
         <div class="announcement">
-            <h3>The Biggest Electric Music Event Live On 03/05/2023</h3>
-            <button class="book">Book Now</button>
+            <div class="announcement-text">
+                <h3>The Biggest Electric Music Event Live On 03/05/2023</h3>
+            </div>
+
+            <div class="book-now">
+                <button class="book-now-button">Book Now</button>
+            </div>
         </div>
 
         <hr>
 
         <!-- footer with additional information-->
-        <footer>
-            <div class="about-us">
-                <pre>
-                    About Us
+        <div class="footer">
 
-Purchase Policy | Privacy Policy | Cookie Policy
-Manage my cookies
-2023 Elektirk. All rights reserved.
+            <div class="follow-us">
+                <p class="follow-us-text">Follow Us</p>
+
+                <div class="follow-us-link">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-square on-hover"></i><span class="link">Facebook</span></a></li>
+                        <li><a href="#"><i class="fab fa-instagram on-hover"></i><span class="link">Instagram</span></a></li>
+                        <li><a href="#"><i class="fab fa-twitter on-hover"></i><span class="link">Twitter</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="edit-hr">
+            
+            <div class="disclaimer">
+                <pre>
+By continuing past this page, you agree 
+to our terms of use.
                 </pre>
             </div>
-            <div class="disclaimer">
-                <p>By continuing past this page, you agree to our terms of use.</p>
+            
+            <hr class="edit-hr">
+            
+            <div class="about-us">
+                <pre>
+About Us
+
+Purchase Policy | Privacy Policy | Cookie Policy
+
+Manage my cookies
+
+2023 Elektirk. All rights reserved.
+</pre>
             </div>
-            <div class="follow-us">
-                <p>Follow Us</p>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook-square on-hover"></i>Facebook</a></li>
-                    <li><a href="#"><i class="fab fa-instagram on-hover"></i>Instagram</a></li>
-                    <li><a href="#"><i class="fab fa-twitter on-hover"></i>Twitter</a></li>
-                </ul>
-            </div>
-        </footer>
+
+        </div>
+        
     </body>
 </html>
